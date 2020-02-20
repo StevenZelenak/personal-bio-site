@@ -1,5 +1,5 @@
 body {
-    background-image: url(./background_001.png);
+    background-image: url(./Images/background_001.png);
     margin: 0;
     padding: 0;
 }
@@ -81,8 +81,8 @@ body {
     justify-content: center;
 }
 
-.cards{
-    
+.cards {
+
     flex: 0 0 24%;
     border-radius: 2px;
     margin: 5px;
@@ -95,12 +95,12 @@ body {
 }
 
 .cards .cardContent {
-    
+
     flex: 1 1 auto;
 }
 
 .cardContent {
-    border: 1px solid rgb(238,238,238);
+    border: 1px solid rgb(238, 238, 238);
 }
 
 .imgDiv {
@@ -123,6 +123,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .page-footer {
 
     font-family: 'Changa', sans-serif;
