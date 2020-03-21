@@ -1,6 +1,128 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css?family=Dosis:700&display=swap');
 
+//variables
+$fontSize: 16px;
+$fontFamily: 'Dosis',
+sans-serif;
+$text-primary: #b6b6b6;
+$text-secondary: #ececec;
+$bg-primary: #23232e;
+$bg-secondary: #141418;
+
+html {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
 
 body {
-    background-color: rgb(224, 218, 218);
+    color: black;
+    background-color: rgb(45, 38, 51);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+.sz-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.0rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    color: $text-secondary;
+    background-color: $bg-secondary;
+}
+
+.sz-logo svg {
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+.sz-navbar:hover .sz-logo svg {
+    transform: rotate(-180deg);
+}
+
+.sz-navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: $bg-primary;
+    transition: 200ms ease;
+}
+
+.sz-navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.sz-nav-item {
+    width: 100%;
+}
+
+.sz-nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: $text-primary;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 400ms ease;
+}
+
+
+.sz-link-text {
+    display: none;
+    margin-left: 2rem;
+}
+
+.sz-nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.sz-navbar:hover {
+    width: 14rem;
+}
+
+.sz-navbar:hover .sz-link-text {
+    display: block;
+    color: $text-secondary;
+
+}
+
+.sz-nav-item:hover {
+    background-color: $bg-secondary;
+
+
+}
+
+.sz-nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    color: rgb(145, 65, 211);
+}
+
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
 }
