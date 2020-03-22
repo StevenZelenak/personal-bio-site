@@ -107,13 +107,11 @@ body::-webkit-scrollbar-thumb {
 .sz-navbar:hover .sz-link-text {
     display: block;
     color: $text-secondary;
-
 }
+
 
 .sz-nav-item:hover {
     background-color: $bg-secondary;
-
-
 }
 
 .sz-nav-link:hover {
@@ -125,4 +123,8 @@ body::-webkit-scrollbar-thumb {
 main {
     margin-left: 5rem;
     padding: 1rem;
+}
+
+.hide {
+    display: none;
 }
