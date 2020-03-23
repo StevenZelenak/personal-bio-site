@@ -6,8 +6,8 @@ const createProjectCards = () => {
   let domString = '';
 
   projects.forEach((project) => {
-    domString += '<div class = "cards">';
-    domString += `<h3>${project.title}</h3> `;
+    domString += '<div class = "cards cards-bg">';
+    domString += `<h2>${project.title}</h2> `;
     domString += '<div class = "cardsContent">';
     domString += `<div class = "imgDiv"><img src=${project.screenshot} alt=""></div>`;
     domString += `<p>${project.description}</p> `;
