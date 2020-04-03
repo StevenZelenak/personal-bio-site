@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     position: fixed;
     background-color: $bg-primary;
+    z-index: 1;
     transition: 200ms ease;
 }
 
@@ -107,13 +108,11 @@ body::-webkit-scrollbar-thumb {
 .sz-navbar:hover .sz-link-text {
     display: block;
     color: $text-secondary;
-
 }
+
 
 .sz-nav-item:hover {
     background-color: $bg-secondary;
-
-
 }
 
 .sz-nav-link:hover {
@@ -124,5 +123,36 @@ body::-webkit-scrollbar-thumb {
 
 main {
     margin-left: 5rem;
+    margin-right: 5rem;
     padding: 1rem;
+}
+
+.imgDiv {
+    width: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+.projectCards {
+    background-color: $bg-primary;
+}
+
+.project-text {
+    color: $text-primary;
+}
+
+.tech-text {
+    color: $text-secondary;
+}
+
+.firebase-icon {
+    color: rgb(177, 83, 28);
+}
+
+.github-icon {
+    color: rgb(145, 65, 211);
 }
