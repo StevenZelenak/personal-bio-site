@@ -11,6 +11,7 @@ const projects = [{
 {
   title: 'Hat-Exercise',
   screenshot: '../../../../Screenshots/hatScreen.png',
+  // eslint-disable-next-line max-len
   description: 'This project is an exploration into Bootstrap 4. I used a Bootstrap jumbotron to display a form that can create bootstrap cards with different house names from Harry Potter. The color of each card is based on which house you get and you can also expel a card from the collection.',
   technologiesUsed: 'HTML, Bootstrap 4, JavaScript, Version Control with Github',
   available: true,
