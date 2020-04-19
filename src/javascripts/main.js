@@ -1,6 +1,6 @@
 import '../styles/main.scss';
 import 'bootstrap';
-import projects from './components/projects/projects';
+import buildProjectCards from './components/Projects/buildProjectCards/buildProjectCards';
 
 const openPage = () => {
   $('#sz-link-games').click(() => {
@@ -42,7 +42,7 @@ const openPage = () => {
 
 const init = () => {
   openPage();
-  projects.createProjectCards();
+  buildProjectCards.buildProjects();
 };
 
 init();
