@@ -16,5 +16,14 @@
     "available": true,
     "url": "https://github.com/StevenZelenak/hat-exercise",
     "githubUrl": "https://github.com/StevenZelenak/hat-exercise"
+  },
+  "project3": {
+    "title": "Pinterest",
+    "screenshot": "https://i.imgur.com/jhkeZPz.png",
+    "description": "This project is an exploration into FireBase. I used cards to display information pulled from Firebase, you can edit, create, or delete the cards. The information also shows up differently depending on what user is logged in.",
+    "technologiesUsed": "HTML, Bootstrap 4, JavaScript, Version Control with Github, Firebase",
+    "available": true,
+    "url": "https://pinterest-c6acf.web.app/",
+    "githubUrl": "https://github.com/StevenZelenak/pinterest"
   }
 }
