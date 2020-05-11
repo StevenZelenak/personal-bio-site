@@ -6,8 +6,8 @@ Personal website meant to give some info about myself and a place to find my por
 
 ## Screenshots
 
-![Main Screen](./Screenshots/screenShot1.png)
-![Main Screen](./Screenshots/screenShot2.png)
+![Main Screen](https://i.imgur.com/1k4341D.png)
+![Main Screen](https://i.imgur.com/b2iFESQ.png)
 
 ## How to Run
 
