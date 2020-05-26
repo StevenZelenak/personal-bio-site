@@ -1,4 +1,5 @@
 const createProjectCards = (project) => {
+  console.error(`${project.url}`);
   let domString = '';
   domString += '<div class="card mb-5 projectCards project-text" style="max-width: 100%;">';
   domString += '<div class="row no-gutters">';
@@ -10,8 +11,8 @@ const createProjectCards = (project) => {
   domString += `<h5 class="card-title">${project.title}</h5>`;
   domString += `<p class="card-text">${project.description}</p>`;
   domString += '<div class="my-2">';
-  domString += `<a href=${project.githubUrl}><i class="github-icon mx-3 fa-3x fab fa-github"></i></a>`;
-  domString += `<a href=${project.url}><i class="firebase-icon mx-3 fa-3x fas fa-fire"></i></a>`;
+  domString += `<p><a href=${project.githubUrl}>GitHub</a></p>`;
+  domString += `<p><a href=${project.url}>Firebase</a></p>`;
   domString += '</div>';
   domString += `<p class="card-text"><small class="tech-text">${project.technologiesUsed}</small></p>`;
   domString += '</div>';

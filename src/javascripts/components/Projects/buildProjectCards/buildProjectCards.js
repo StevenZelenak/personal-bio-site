@@ -14,7 +14,6 @@ const buildProjects = () => {
       });
       domString += '</div>';
       utils.printToDom('sz-projects', domString);
-      console.error(projects);
     })
     .catch((err) => console.error('get cows broke', err));
 };
