@@ -5,7 +5,7 @@ const buildBioPage = () => {
   let domString = '';
   domString += '<div class="container">';
   domString += '<div>';
-  domString += '<img src="https://i.imgur.com/KMZHYxC.jpg" class="rounded-circle center mb-5 mt-4" alt="...">';
+  domString += '<img src="https://i.imgur.com/KMZHYxC.jpg" class="center mb-5 mt-4" alt="...">';
   domString += '</div>';
   domString += '<div class="px-5 py-5 bio">';
   // eslint-disable-next-line quotes
