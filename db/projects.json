@@ -5,7 +5,7 @@
     "description": "In this project I used what I learned of ES6 modules and SASS to create a Tamagotchi. The Tamagotchi has four values eat, fight, play, sleep.Which go up or down depending on the button you click.",
     "technologiesUsed": "HTML, SCSS, JavaScript, ES6 Modules, Version Control with Github",
     "available": true,
-    "url": "https://pinterest-c6acf.firebaseapp.com",
+    "url": "https://tamagotchi-1e1ea.firebaseapp.com",
     "githubUrl": "https://github.com/StevenZelenak/tamagotchi-project"
   },
   "project2": {
@@ -14,7 +14,7 @@
     "description": "This project is an exploration into Bootstrap 4. I used a Bootstrap jumbotron to display a form that can create bootstrap cards with different house names from Harry Potter. The color of each card is based on which house you get and you can also expel a card from the collection.",
     "technologiesUsed": "HTML, Bootstrap 4, JavaScript, Version Control with Github",
     "available": true,
-    "url": "https://pinterest-c6acf.firebaseapp.com",
+    "url": "https://hat-exercise.firebaseapp.com",
     "githubUrl": "https://github.com/StevenZelenak/hat-exercise"
   },
   "project3": {
@@ -25,5 +25,14 @@
     "available": true,
     "url": "https://pinterest-c6acf.firebaseapp.com",
     "githubUrl": "https://github.com/StevenZelenak/pinterest"
+  },
+  "project4": {
+    "title": "Mushroom Picker",
+    "screenshot": "https://i.imgur.com/aqxbDqT.png",
+    "description": "This project is an exploration into React. You click the pick a shroom button to make a random mushroom and different effects happen depending on which mushroom you get. The goal is to collect all the mushrooms.",
+    "technologiesUsed": "HTML, Bootstrap 4, JavaScript, Version Control with Github, React, Sass",
+    "available": true,
+    "url": "https://pinterest-c6acf.firebaseapp.com",
+    "githubUrl": "https://github.com/StevenZelenak/mushroom-picker"
   }
 }
