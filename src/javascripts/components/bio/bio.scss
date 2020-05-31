@@ -1,6 +1,7 @@
-img {
+.bio-img {
   width: 300px;
   height: 300px;
+  clip-path: polygon(50% -10%, 100% 25%, 100% 75%, 50% 110%, 0% 75%, 0% 25%);
 }
 
 img.center {
@@ -13,5 +14,4 @@ img.center {
   font-size: 20px;
   border-radius: 20px;
   color: #b6b6b6;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
