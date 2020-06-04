@@ -2,7 +2,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 $main-purp: #3c0d47;
-$main-text-color: rgb(158, 154, 154);
+$main-text-color: white;
 $main-text-font: 'Roboto Slab',
 serif;
 
@@ -14,23 +14,74 @@ serif;
 
 body {
     background: linear-gradient(rgb(236, 234, 234), rgb(146, 146, 146));
-    padding: 30px;
+    font-family: $main-text-font;
 }
 
 .navbarBackground {
-    background-color: $main-purp;
+    background: linear-gradient($main-purp, #4a2653);
 }
 
 .navbarBackground a {
     color: $main-text-color;
     font-family: $main-text-font;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .logoBorder {
-    border: rgb(158, 154, 154) solid 2px;
+    border: white solid 2px;
     padding: 1px 4px 1px 4px;
 }
 
-.displayBlock {
+.homeBackgroundImage {
+    background-image: linear-gradient(to right bottom,
+            #37114dd2,
+            #a781a8c4),
+        url(https://i.imgur.com/ul8W237.jpg);
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 100%);
+}
+
+#sz-homepage {
+    position: relative;
+}
+
+.text-box-main {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box-sub {
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.heading-sub {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.heading-primary-main {
+    display: inline;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 25px;
+}
+
+.heading-primary-sub {
     display: block;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 15px;
 }
