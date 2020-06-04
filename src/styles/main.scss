@@ -1,16 +1,36 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css?family=Dosis:700&display=swap');
 
-.solidBackgrounHeader {
-    background-color: rgb(173, 173, 255);
-    width: 25%;
-    margin: 0, 0, 0, 50%;
-    height: 100vh;
+$main-purp: #3c0d47;
+$main-text-color: rgb(158, 154, 154);
+$main-text-font: 'Roboto Slab',
+serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.square {
-    width: 100px;
-    height: 100px;
-    background: red;
+body {
+    background: linear-gradient(rgb(236, 234, 234), rgb(146, 146, 146));
+    padding: 30px;
+}
+
+.navbarBackground {
+    background-color: $main-purp;
+}
+
+.navbarBackground a {
+    color: $main-text-color;
+    font-family: $main-text-font;
+}
+
+.logoBorder {
+    border: rgb(158, 154, 154) solid 2px;
+    padding: 1px 4px 1px 4px;
+}
+
+.displayBlock {
+    display: block;
 }
