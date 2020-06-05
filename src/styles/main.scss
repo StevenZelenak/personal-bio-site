@@ -28,6 +28,11 @@ body {
     font-weight: 300;
 }
 
+.navbarBackground a:hover {
+    background: linear-gradient(#330b3b, #3d1f44);
+    box-shadow: 0 0 0px 10px #330b3b;
+}
+
 .logoBorder {
     border: white solid 2px;
     padding: 1px 4px 1px 4px;
