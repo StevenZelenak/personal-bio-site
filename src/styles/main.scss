@@ -123,3 +123,16 @@ body {
     font-weight: 400;
     letter-spacing: 15px;
 }
+
+.contactFooter {
+    border: solid $main-purp 5px;
+    background-color: $main-purp;
+    color: $main-text-color;
+    padding: 10px;
+    height: 15vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
