@@ -8,6 +8,7 @@ const buildBioPage = () => {
   domString += '<img src="https://i.imgur.com/KMZHYxC.jpg" class="center mb-5 mt-4 bio-img" alt="...">';
   domString += '</div>';
   domString += '<div class="px-5 py-5 bio">';
+  domString += '<h1 class="text-center my-3">Who am I?</h1>';
   // eslint-disable-next-line quotes
   domString += `<p>I am someone who loves to learn new skills and meet new people. Through-out my life I have constantly 
   tried to find a way to improve myself and find a skill or trade that I want to do.
@@ -23,6 +24,7 @@ const buildBioPage = () => {
   School is expensive and being a manager while trying to learn a completely new skill sounded terrible (It is very terrible). 
   Still I felt like this would make me happier and to be honest programming has made me happier. 
   It is one of the most frustrating skills I have ever learned in my life but it is so much more rewarding than anything else I have ever done.</p>`;
+
   domString += '</div>';
   domString += '</div>';
 
