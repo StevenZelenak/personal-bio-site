@@ -11,4 +11,4 @@ Personal website meant to give some info about myself and a place to find my por
 
 ## How to Run
 
-#### Just click [here](https://mushroom-picker-f8c05.web.app) to see the website!
+#### Just click [here](https://personal-bio-58564.web.app) to see the website!
