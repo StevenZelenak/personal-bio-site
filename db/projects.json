@@ -32,7 +32,7 @@
     "description": "This project is an exploration into React. You click the pick a shroom button to make a random mushroom and different effects happen depending on which mushroom you get. The goal is to collect all the mushrooms.",
     "technologiesUsed": "HTML, Bootstrap 4, JavaScript, Version Control with Github, React, Sass",
     "available": true,
-    "url": "https://pinterest-c6acf.firebaseapp.com",
+    "url": "https://mushroom-picker-f8c05.web.app",
     "githubUrl": "https://github.com/StevenZelenak/mushroom-picker"
   }
 }

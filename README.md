@@ -6,13 +6,9 @@ Personal website meant to give some info about myself and a place to find my por
 
 ## Screenshots
 
-![Main Screen](https://i.imgur.com/1k4341D.png)
-![Main Screen](https://i.imgur.com/b2iFESQ.png)
+![Main Screen](https://i.imgur.com/wb71Rrc.png)
+![Main Screen](https://i.imgur.com/w45i5tQ.png)
 
 ## How to Run
 
-1. Clone down this repo
-1. Make sure you have http-server installed via npm. If not get it
-   [here](https://www.npmjs.com/package/http-server)
-1. On your command line run `hs -p 8080`
-1. In your browser go to `http://localhost:8080`
+#### Just click [here](https://mushroom-picker-f8c05.web.app) to see the website!

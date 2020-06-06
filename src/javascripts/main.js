@@ -2,6 +2,7 @@ import '../styles/main.scss';
 import 'bootstrap';
 import buildProjectCards from './components/Projects/buildProjectCards/buildProjectCards';
 import bio from './components/bio/bio';
+import tech from './components/technologies/tech';
 
 const openPage = () => {
   $('#sz-link-homepage').click(() => {
@@ -34,6 +35,7 @@ const init = () => {
   openPage();
   buildProjectCards.buildProjects();
   bio.buildBioPage();
+  tech.buildTechPage();
 };
 
 init();

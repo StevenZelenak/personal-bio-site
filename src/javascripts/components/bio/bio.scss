@@ -1,17 +1,19 @@
 .bio-img {
   width: 300px;
   height: 300px;
-  clip-path: polygon(50% -10%, 100% 25%, 100% 75%, 50% 110%, 0% 75%, 0% 25%);
+  float: Right;
+  margin: 40px;
+  clip-path: circle(50% at 50% 50%);
 }
 
-img.center {
-  display: block;
-  margin: 0 auto;
-}
+// .bio-img.center {
+//   display: block;
+//   margin: 0 auto;
+// }
 
 .bio {
-  background-color: #23232e;
-  font-size: 20px;
-  border-radius: 20px;
-  color: #b6b6b6;
+  font-size: 21px;
+  color: #3c0d47;
+  margin: 20px;
+  height: 45vh;
 }

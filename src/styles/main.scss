@@ -1,158 +1,138 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css?family=Dosis:700&display=swap');
 
-//variables
-$fontSize: 16px;
-$fontFamily: 'Dosis',
-sans-serif;
-$text-primary: #b6b6b6;
-$text-secondary: #ececec;
-$bg-primary: #23232e;
-$bg-secondary: #141418;
+$main-purp: #3c0d47;
+$main-text-color: white;
+$main-text-font: 'Roboto Slab',
+serif;
 
-html {
-    font-size: $fontSize;
-    font-family: $fontFamily;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    color: black;
-    background-color: rgb(45, 38, 51);
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(rgb(236, 234, 234), rgb(146, 146, 146));
+    font-family: $main-text-font;
 }
 
-body::-webkit-scrollbar {
-    width: 0.25rem;
+::-webkit-scrollbar {
+    width: 0.75rem;
 }
 
-body::-webkit-scrollbar-track {
-    background: #1e1e24;
+::-webkit-scrollbar-track {
+    background: #653e66e7;
 }
 
-body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+::-webkit-scrollbar-thumb {
+    background: linear-gradient($main-purp, #4a2653);
+    border-radius: 10px;
 }
 
-.sz-logo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1.0rem;
-    letter-spacing: 0.3ch;
-    width: 100%;
-    color: $text-secondary;
-    background-color: $bg-secondary;
-}
-
-.sz-logo svg {
-    transform: rotate(0deg);
-    transition: transform 600ms;
-}
-
-.sz-navbar:hover .sz-logo svg {
-    transform: rotate(-180deg);
-}
-
-.sz-navbar {
-    width: 5rem;
-    height: 100vh;
+.sticky {
     position: fixed;
-    background-color: $bg-primary;
+    top: 0;
+    width: 100%;
     z-index: 1;
-    transition: 200ms ease;
 }
 
-.sz-navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+
+#sz-bio {
+    display: inline-block;
 }
 
-.sz-nav-item {
+#sz-tech {
+    display: inline-block;
     width: 100%;
 }
 
-.sz-nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: $text-primary;
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: 400ms ease;
+.navbarBackground {
+    background: linear-gradient($main-purp, #4a2653);
 }
 
-
-.sz-link-text {
-    display: none;
-    margin-left: 2rem;
+.navbarBackground a {
+    color: $main-text-color;
+    font-family: $main-text-font;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.sz-nav-link svg {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
+.navbarBackground a:hover {
+    background: #330b3b;
+    box-shadow: 0 0 0px 10px #330b3b;
 }
 
-.sz-navbar:hover {
-    width: 14rem;
+.logoBorder {
+    border: white solid 2px;
+    padding: 1px 4px 1px 4px;
 }
 
-.sz-navbar:hover .sz-link-text {
+.homeBackgroundImage {
+    background-image: linear-gradient(to right bottom,
+            #37114dd2,
+            #a781a8c4),
+        url(https://i.imgur.com/ul8W237.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 100%);
+}
+
+#sz-homepage {
+    position: relative;
+}
+
+.text-box-main {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box-sub {
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.heading-sub {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.heading-primary-main {
+    display: inline;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 25px;
+}
+
+.heading-primary-sub {
     display: block;
-    color: $text-secondary;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 15px;
 }
 
-
-.sz-nav-item:hover {
-    background-color: $bg-secondary;
-}
-
-.sz-nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    color: rgb(145, 65, 211);
-}
-
-
-main {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding: 1rem;
-}
-
-.imgDiv {
-    width: 100px;
-}
-
-.hide {
-    display: none;
-}
-
-
-
-.projectCards {
-    background-color: $bg-primary;
-}
-
-.project-text {
-    color: $text-primary;
-}
-
-.tech-text {
-    color: $text-secondary;
-}
-
-.firebase-icon {
-    color: rgb(177, 83, 28);
-}
-
-.github-icon {
-    color: rgb(145, 65, 211);
+.contactFooter {
+    border: solid $main-purp 5px;
+    background-color: $main-purp;
+    color: $main-text-color;
+    padding: 10px;
+    height: 15vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
 }
