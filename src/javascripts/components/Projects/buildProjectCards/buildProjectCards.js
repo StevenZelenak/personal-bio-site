@@ -2,7 +2,6 @@ import projectData from '../../../helpers/data/projectData';
 import utils from '../../../helpers/utils';
 import createProjectCards from '../createProjectCards/createProjectCards';
 
-
 const buildProjects = () => {
   projectData.getProjects()
     .then((projects) => {

@@ -5,12 +5,13 @@ module.exports = {
   entry: './src/javascripts/main.js',
   devtool: "eval-source-map",
   module: {
-    rules: [{
+    rules: [
+      {
         enforce: "pre",
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader",
-        options: {
+	options: {
           formatter: require('eslint/lib/cli-engine/formatters/stylish')
         }
       },
@@ -23,30 +24,19 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: [{
-          loader: "html-loader",
-          options: {
-            minimize: true
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
           }
-        }]
+        ]
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              importLoaders: 1
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          },
+            { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+            { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
       {
@@ -71,7 +61,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
-    })
+    }),
+    new webpack.DefinePlugin( {
+      'process.env': JSON.stringify(process.env || dotenv.parsed),
+    }),
   ],
   output: {
     path: __dirname + "/build",
