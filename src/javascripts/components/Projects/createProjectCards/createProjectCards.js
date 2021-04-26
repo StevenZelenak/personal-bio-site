@@ -11,8 +11,8 @@ const createProjectCards = (project) => {
   domString += `<h5 class="card-title">${project.title}</h5>`;
   domString += `<p class="card-text">${project.description}</p>`;
   domString += '<div class="my-2">';
-  domString += `<p><a href=${project.githubUrl}>GitHub</a></p>`;
-  domString += `<p><a href=${project.url}>Firebase</a></p>`;
+  domString += `<p><a href=${project.githubUrl}>Github</a></p>`;
+  domString += `<p><a href=${project.url}>${project.title}</a></p>`;
   domString += '</div>';
   domString += `<p class="card-text"><small class="tech-text">${project.technologiesUsed}</small></p>`;
   domString += '</div>';
