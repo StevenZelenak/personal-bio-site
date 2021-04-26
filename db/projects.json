@@ -1,12 +1,12 @@
 {
   "project1": {
-    "title": "Tamagotchi",
-    "screenshot": "https://i.imgur.com/EjRiARD.png",
-    "description": "In this project I used what I learned of ES6 modules and SASS to create a Tamagotchi. The Tamagotchi has four values eat, fight, play, sleep.Which go up or down depending on the button you click.",
-    "technologiesUsed": "HTML, SCSS, JavaScript, ES6 Modules, Version Control with Github",
+    "title": "Book Keeper",
+    "screenshot": "https://i.imgur.com/yWTt3iP.png",
+    "description": "I created this site with the idea of storing a list of all my books digitally. Whether they are digital, physical, or audio. When the site it opened you are taken to your library where you can Create a book, Update that book, and Delete the book. The reason for creating this app was because I wanted a way to check my library away from home so not to double purchase any books. Which is something that has happened to me quite often.",
+    "technologiesUsed": "React, SASS, JSX, Firebase, React-Bootstrap, Version Control with Github",
     "available": true,
-    "url": "https://tamagotchi-1e1ea.firebaseapp.com",
-    "githubUrl": "https://github.com/StevenZelenak/tamagotchi-project"
+    "url": "https://book-keeper-5e44c.web.app/auth",
+    "githubUrl": "https://github.com/StevenZelenak/book-keeper"
   },
   "project2": {
     "title": "Hat-Exercise",
